@@ -307,7 +307,8 @@ static bool IsValidROM()
 			{
 				if (stricmp(p, ".iso") == 0 ||
 					stricmp(p, ".bin") == 0 ||
-					stricmp(p, ".nrg") == 0 ||
+					stricmp(p, ".Z") == 0 ||
+					stricmp(p, ".table") == 0 ||
 					stricmp(p, ".ccd") == 0 ||
 					stricmp(p, ".cue") == 0)
 				{

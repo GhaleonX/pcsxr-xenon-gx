@@ -144,16 +144,23 @@ int cmain_loop() {
 	strcpy(Config.Bios, "SCPH1001.BIN"); // Use actual BIOS
 	//strcpy(Config.Bios, "scph7502.bin"); // Use actual BIOS
 	//strcpy(Config.Bios, "HLE"); // Use HLE
+/*
 	strcpy(Config.BiosDir, "sda0:/devkit/pcsxr/bios");
 	strcpy(Config.PatchesDir, "sda0:/devkit/pcsxr/patches_/");
-
+*/
+	strcpy(Config.BiosDir, "sda0:/pcsxr/bios");
+	strcpy(Config.PatchesDir, "sda0:/pcsxr/patches_/");
+    
 	Config.PsxAuto = 1; // autodetect system
 	
 	Config.Cpu = CPU_DYNAREC;
 	//Config.Cpu =  CPU_INTERPRETER;
-
+/*
 	strcpy(Config.Mcd1, "sda0:/devkit/pcsxr/memcards/card1.mcd");
 	strcpy(Config.Mcd2, "sda0:/devkit/pcsxr/memcards/card2.mcd");
+*/
+	strcpy(Config.Mcd1, "sda0:/pcsxr/memcards/card1.mcd");
+	strcpy(Config.Mcd2, "sda0:/pcsxr/memcards/card2.mcd");
 
 	// useSoftGpu();
 	/*

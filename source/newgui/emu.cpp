@@ -78,7 +78,7 @@ static void _SetIso(const char * fname) {
 
 SEMUInterface::SEMUInterface() {
 	// Default dir
-	strcpy(rootdir, "sda0:/devkit/pcsxr/");
+	strcpy(rootdir, "sda0:/pcsxr/");
 }
 
 int SEMUInterface::Reset() {
@@ -224,7 +224,7 @@ int SEMUInterface::ScanRootdir() {
 	
 	// @todo parse from config !
 	available_dir.push_back("/pcsxr/");
-	available_dir.push_back("/devkit/pcsxr/");
+//	available_dir.push_back("/devkit/pcsxr/");
 	
 	for (int idev = 3; idev < STD_MAX; idev++) {
 		if (devoptab_list[idev]->structSize) {

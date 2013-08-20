@@ -43,7 +43,7 @@ void doScreenCapture() {
         struct timeval tp;
         gettimeofday(&tp, NULL);
         char filename[256];
-        sprintf(filename, "usb:/sshot_%d.png", tp.tv_sec);
+        sprintf(filename, "sda0:/sshot_%d.png", tp.tv_sec);
 
         FILE *outfp = fopen(filename, "wb");
 
